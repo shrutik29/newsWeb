@@ -30,7 +30,7 @@ export const Cards = ({category, setError}) => {
         {(newData.error !== 200)?(setError(true)):
       (newData?(data.map((news)=>(
 
-            (news.title === "[Removed]" || news.urlToImage === )? null:
+            (news.title === "[Removed]" )? null:
                 <CustCard data={news}/>
             
     ))):<div></div>)}
